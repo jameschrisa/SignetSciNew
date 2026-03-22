@@ -317,12 +317,11 @@ button, input, select, textarea {
 }
 .hero-chinese {
   font-family: 'Noto Sans TC', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: clamp(20px, 2.5vw, 28px);
-  color: var(--color-accent-primary);
+  color: #f50f0f;
   letter-spacing: 0.3em;
   margin-bottom: 20px;
-  opacity: 0.7;
 }
 .hero-sub {
   font-size: var(--text-body-lg);
@@ -584,8 +583,8 @@ button, input, select, textarea {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: var(--color-accent-primary);
-  opacity: 0.45;
+  color: #f50f0f;
+  opacity: 0.7;
   margin-bottom: 12px;
 }
 .service-card p {
@@ -948,8 +947,8 @@ button, input, select, textarea {
   font-family: 'Noto Sans TC', sans-serif;
   font-weight: 400;
   font-size: 13px;
-  color: var(--color-accent-primary);
-  opacity: 0.5;
+  color: #f50f0f;
+  opacity: 0.7;
   margin-bottom: 2px;
 }
 .team-title {
