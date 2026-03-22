@@ -6,18 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── ANNOUNCEMENT BANNER ──
   const banner = document.getElementById('announcement-banner');
-  const bannerClose = document.getElementById('announcement-close');
   const reportForm = document.getElementById('report-signup');
-
-  // Check if previously dismissed
-  if (banner && sessionStorage.getItem('banner-dismissed')) {
-    banner.classList.add('hidden');
-  }
-
-  bannerClose?.addEventListener('click', () => {
-    banner.classList.add('hidden');
-    sessionStorage.setItem('banner-dismissed', 'true');
-  });
 
   reportForm?.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -39,9 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.textContent = 'You\'re In!';
         reportForm.querySelector('.announcement-input').value = '';
         setTimeout(() => {
-          banner.classList.add('hidden');
-          sessionStorage.setItem('banner-dismissed', 'true');
-        }, 2000);
+          btn.textContent = 'Notify Me';
+        }, 3000);
       } else {
         btn.textContent = 'Try Again';
         setTimeout(() => { btn.textContent = 'Notify Me'; }, 2000);
