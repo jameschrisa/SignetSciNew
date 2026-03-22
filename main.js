@@ -308,16 +308,30 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    // Simulate submission
-    setTimeout(() => {
-      btn.textContent = 'Message Sent!';
-      btn.style.background = 'var(--color-accent-primary)';
-      form.reset();
+    const data = new FormData(form);
+
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        btn.textContent = 'Message Sent!';
+        form.reset();
+      } else {
+        btn.textContent = 'Error — Try Again';
+      }
       setTimeout(() => {
         btn.textContent = 'Send Message \u2192';
         btn.disabled = false;
       }, 3000);
-    }, 1500);
+    }).catch(() => {
+      btn.textContent = 'Error — Try Again';
+      setTimeout(() => {
+        btn.textContent = 'Send Message \u2192';
+        btn.disabled = false;
+      }, 3000);
+    });
   });
 
 });
