@@ -1,0 +1,15 @@
+<svg viewBox="0 0 440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="signet-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F908ED"/>
+      <stop offset="100%" stop-color="#FFBD07"/>
+    </linearGradient>
+  </defs>
+  <!-- Dark background -->
+  <rect width="440" height="120" rx="8" fill="#050814"/>
+  <!-- Symbol -->
+  <polygon points="48,25 115,25 92,53 25,53" fill="url(#signet-grad)"/>
+  <polygon points="48,67 115,67 92,95 25,95" fill="url(#signet-grad)"/>
+  <!-- Wordmark -->
+  <text x="130" y="70" font-family="Merriweather, Georgia, serif" font-weight="700" font-size="32" fill="#F0F4FF">Signet Science</text>
+</svg>
