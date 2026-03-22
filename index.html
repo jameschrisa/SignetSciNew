@@ -253,6 +253,28 @@
   <a href="#contact" class="btn btn-primary" style="margin-top: 16px;">Start a Project &rarr;</a>
 </div>
 
+<!-- ═══════════════════════════════════════════════════════════════
+     ANNOUNCEMENT BANNER
+     ═══════════════════════════════════════════════════════════════ -->
+<div class="announcement-banner" id="announcement-banner">
+  <div class="announcement-inner">
+    <div class="announcement-content">
+      <span class="announcement-badge">NEW</span>
+      <p class="announcement-text">
+        The <strong>2026-2027 IRL Challenger Brand Trend Report</strong> is now in development. Get it delivered in Q4.
+      </p>
+    </div>
+    <form class="announcement-signup" id="report-signup">
+      <input type="hidden" name="access_key" value="71a6f32b-a57b-42cb-a74a-22220375ace8">
+      <input type="hidden" name="subject" value="New Report Signup: 2026-2027 IRL Challenger Brand Trend Report">
+      <input type="hidden" name="source" value="challenger-brand-report-2026">
+      <input type="email" placeholder="Enter your email" required class="announcement-input" name="email">
+      <button type="submit" class="announcement-btn">Notify Me</button>
+    </form>
+    <button class="announcement-close" id="announcement-close" aria-label="Dismiss banner">&times;</button>
+  </div>
+</div>
+
 <main>
 <!-- ═══════════════════════════════════════════════════════════════
      HERO
@@ -888,7 +910,9 @@
     </div>
 
     <div class="contact-grid">
-      <form id="contact-form" class="reveal" action="https://formspree.io/f/xyzgolpb" method="POST">
+      <form id="contact-form" class="reveal" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="71a6f32b-a57b-42cb-a74a-22220375ace8">
+        <input type="hidden" name="subject" value="New Contact: Signet Science Inquiry">
         <div class="form-row">
           <div class="form-group">
             <label for="first-name">First Name</label>

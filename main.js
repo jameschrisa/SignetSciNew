@@ -4,6 +4,54 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ── ANNOUNCEMENT BANNER ──
+  const banner = document.getElementById('announcement-banner');
+  const bannerClose = document.getElementById('announcement-close');
+  const reportForm = document.getElementById('report-signup');
+
+  // Check if previously dismissed
+  if (banner && sessionStorage.getItem('banner-dismissed')) {
+    banner.classList.add('hidden');
+  }
+
+  bannerClose?.addEventListener('click', () => {
+    banner.classList.add('hidden');
+    sessionStorage.setItem('banner-dismissed', 'true');
+  });
+
+  reportForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = reportForm.querySelector('.announcement-btn');
+    const email = reportForm.querySelector('.announcement-input').value;
+    btn.textContent = 'Sending...';
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: JSON.stringify({
+        access_key: '71a6f32b-a57b-42cb-a74a-22220375ace8',
+        subject: 'New Report Signup: 2026-2027 IRL Challenger Brand Trend Report',
+        email: email,
+        source: 'challenger-brand-report-2026'
+      }),
+      headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        btn.textContent = 'You\'re In!';
+        reportForm.querySelector('.announcement-input').value = '';
+        setTimeout(() => {
+          banner.classList.add('hidden');
+          sessionStorage.setItem('banner-dismissed', 'true');
+        }, 2000);
+      } else {
+        btn.textContent = 'Try Again';
+        setTimeout(() => { btn.textContent = 'Notify Me'; }, 2000);
+      }
+    }).catch(() => {
+      btn.textContent = 'Try Again';
+      setTimeout(() => { btn.textContent = 'Notify Me'; }, 2000);
+    });
+  });
+
   // ── STICKY NAV SCROLL EFFECT ──
   const nav = document.querySelector('.nav');
   let lastScroll = 0;
@@ -310,7 +358,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const data = new FormData(form);
 
-    fetch(form.action, {
+    fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       body: data,
       headers: { 'Accept': 'application/json' }
