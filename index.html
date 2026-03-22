@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signet Science — Experiential Brand Studio & Platform Innovation Lab</title>
+  <meta name="description" content="Signet Science is an experiential brand studio that architects Human-in-the-Loop brand systems for technology companies. Immersive experience design, developer relations, and brand architecture.">
+  <meta property="og:title" content="Signet Science — Experiential Brand Studio & Platform Innovation Lab">
+  <meta property="og:description" content="Signet Science is an experiential brand studio that architects Human-in-the-Loop brand systems for technology companies. Immersive experience design, developer relations, and brand architecture.">
+  <meta property="og:image" content="https://signetscience.com/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://signetscience.com">
+  <link rel="canonical" href="https://signetscience.com">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Signet Science",
+    "alternateName": "Signet Science Platform Innovation Lab",
+    "url": "https://signetscience.com",
+    "description": "Signet Science is an experiential brand studio and platform innovation lab specializing in Human-in-the-Loop brand systems, immersive experience design, and developer community programs for technology companies.",
+    "founders": [
+      { "@type": "Person", "name": "James Christopher" },
+      { "@type": "Person", "name": "Matt Baha" },
+      { "@type": "Person", "name": "Chris Allen" }
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Business Inquiries"
+    },
+    "sameAs": [
+      "https://linkedin.com/company/signet-science"
+    ],
+    "serviceType": [
+      "Brand Architecture Consulting",
+      "Experiential Brand Design",
+      "Human-in-the-Loop System Design",
+      "Developer Relations Programs",
+      "Multisensory Brand Experience"
+    ]
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Signet Science?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Signet Science is an experiential brand studio and platform innovation lab. The company specializes in Human-in-the-Loop brand systems — designing brand experiences that synthesize human intuition with machine intelligence for technology companies, enterprises, and high-growth startups."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Human-in-the-Loop brand design?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Human-in-the-Loop (HITL) brand design is Signet Science's proprietary methodology for building brand systems that keep human judgment, intuition, and sensory experience at the center of every touchpoint — even when AI and automation power the underlying infrastructure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of companies does Signet Science work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Signet Science partners selectively with technology companies, enterprises, and high-growth startups in sectors including health, infrastructure, finance, and commerce. Past clients include Qualcomm, Toyota USA, Texas Instruments, and Kayo Energy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What services does Signet Science offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Signet Science offers brand architecture consulting, experience architecture and design, immersive brand experience design, customer experience journey mapping, multisensory brand design, and developer relations and community-building programs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Signet Science different from a traditional brand agency?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Unlike traditional brand agencies focused on visual identity and campaigns, Signet Science architects entire Human-in-the-Loop brand ecosystems. The studio combines brand strategy with behavioral science, platform technology, and developer community expertise."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <img src="assets/images/signet-logo.svg" alt="Signet Science logo" class="nav-logo-icon">
+      <span class="nav-logo-name">Signet Science</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <a href="#contact" class="btn btn-outline nav-cta">Start a Project &rarr;</a>
+
+    <div class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav Overlay -->
+<div class="mobile-nav">
+  <a href="#work">Work</a>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#team">Team</a>
+  <a href="#contact">Contact</a>
+  <a href="#contact" class="btn btn-primary" style="margin-top: 16px;">Start a Project &rarr;</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-canvas">
+    <canvas id="hero-particles"></canvas>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">An Experiential Brand Studio</div>
+      <h1 class="reveal reveal-delay-1">
+        <span class="accent">Human-Powered</span><br>
+        Brand Experiences.
+      </h1>
+      <p class="hero-sub reveal reveal-delay-2">
+        Signet Science architects Human-in-the-Loop brand systems — bridging
+        AI and human intelligence to create immersive experiences for
+        technology companies.
+      </p>
+      <div class="hero-ctas reveal reveal-delay-3">
+        <a href="#work" class="btn btn-primary">See Our Work</a>
+        <a href="#about" class="btn btn-outline">Learn Our Approach</a>
+      </div>
+      <div class="trust-bar reveal reveal-delay-4">
+        <span class="trust-bar-label">Clients include:</span>
+        <div class="trust-logos">
+          <span>Qualcomm</span>
+          <span>Toyota</span>
+          <span>Texas Instruments</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 2 — THE APPROACH
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="approach" id="about">
+  <div class="container">
+    <div class="section-label reveal"><span>[</span> 01 — Our Approach <span>]</span></div>
+    <div class="approach-grid">
+      <div>
+        <h2 class="reveal">Where Human Intelligence<br>Meets System Synthesis</h2>
+      </div>
+      <div>
+        <p class="approach-body reveal">
+          Signet Science is an experiential brand studio and innovation lab.
+          We don't just build brands; we architect Human-in-the-Loop systems
+          that bridge the gap between visionary technology and the people who
+          use it. Our proprietary HITL brand framework identifies the cognitive
+          and sensory touchpoints automation cannot replicate. By mapping human
+          needs to technological capabilities, we design brand ecosystems that
+          drive genuine advocacy — not just awareness.
+        </p>
+        <div class="stat-row reveal">
+          <div class="stat-item">
+            <div class="stat-number" data-count="15" data-suffix="+">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="40" data-suffix="+">0</div>
+            <div class="stat-label">Brand Engagements</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">Fortune 500</div>
+            <div class="stat-label">Clients Served</div>
+          </div>
+        </div>
+
+        <!-- HITL Cycle Diagram -->
+        <div class="hitl-diagram reveal">
+          <svg viewBox="0 0 500 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#F908ED"/>
+                <stop offset="100%" stop-color="#FFBD07"/>
+              </linearGradient>
+            </defs>
+            <!-- Nodes -->
+            <circle cx="30" cy="40" r="8" fill="#F908ED" opacity="0.9"/>
+            <circle cx="145" cy="40" r="8" fill="#F908ED" opacity="0.9"/>
+            <circle cx="260" cy="40" r="8" fill="#F908ED" opacity="0.9"/>
+            <circle cx="375" cy="40" r="8" fill="#F908ED" opacity="0.9"/>
+            <circle cx="475" cy="40" r="8" fill="#F908ED" opacity="0.9"/>
+            <!-- Lines -->
+            <line x1="38" y1="40" x2="137" y2="40" stroke="#FFBD07" stroke-width="1.5" opacity="0.5"/>
+            <line x1="153" y1="40" x2="252" y2="40" stroke="#FFBD07" stroke-width="1.5" opacity="0.5"/>
+            <line x1="268" y1="40" x2="367" y2="40" stroke="#FFBD07" stroke-width="1.5" opacity="0.5"/>
+            <line x1="383" y1="40" x2="467" y2="40" stroke="#FFBD07" stroke-width="1.5" opacity="0.5"/>
+            <!-- Labels -->
+            <text x="30" y="68" text-anchor="middle" fill="#7B8DB0" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="0.05em">HUMAN NEED</text>
+            <text x="145" y="68" text-anchor="middle" fill="#7B8DB0" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="0.05em">SIGNAL MAP</text>
+            <text x="260" y="68" text-anchor="middle" fill="#7B8DB0" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="0.05em">SYSTEM DESIGN</text>
+            <text x="375" y="68" text-anchor="middle" fill="#7B8DB0" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="0.05em">EXPERIENCE</text>
+            <text x="475" y="68" text-anchor="middle" fill="#7B8DB0" font-family="JetBrains Mono, monospace" font-size="8" letter-spacing="0.05em">OUTCOME</text>
+            <!-- Return arrow -->
+            <path d="M475 32 C 490 -5, 15 -5, 30 32" stroke="url(#line-grad)" stroke-width="1" fill="none" stroke-dasharray="4 3" opacity="0.4"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 3 — HUMAN DIMENSION
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="human-dimension" id="approach">
+  <div class="container">
+    <div class="hd-grid">
+      <div class="hd-text reveal">
+        <div class="section-label"><span>[</span> Beyond the Interface <span>]</span></div>
+        <h2>Beyond the Interface:<br>The Human Dimension</h2>
+        <p>
+          Conventional marketing stops at the screen. We go deeper. Our studio
+          identifies the sensory and cognitive touchpoints that address human
+          needs in ways automation cannot. By synthesizing human intuition
+          with machine intelligence, we create resonant ecosystems — not just
+          campaigns — that turn users into advocates and technology into an
+          experience.
+        </p>
+        <a href="#services" class="btn btn-outline">Explore Human-in-the-Loop Systems &rarr;</a>
+      </div>
+      <div class="hd-visual reveal reveal-delay-2">
+        <!-- Placeholder for glowing human figure -->
+        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="glow-outer" cx="50%" cy="45%" r="50%">
+              <stop offset="0%" stop-color="#FFBD07" stop-opacity="0.15"/>
+              <stop offset="60%" stop-color="#F908ED" stop-opacity="0.05"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+            <radialGradient id="glow-inner" cx="50%" cy="40%" r="30%">
+              <stop offset="0%" stop-color="#F908ED" stop-opacity="0.8"/>
+              <stop offset="50%" stop-color="#F908ED" stop-opacity="0.2"/>
+              <stop offset="100%" stop-color="transparent"/>
+            </radialGradient>
+            <linearGradient id="body-grad" x1="50%" y1="0%" x2="50%" y2="100%">
+              <stop offset="0%" stop-color="#F908ED"/>
+              <stop offset="100%" stop-color="#FFBD07"/>
+            </linearGradient>
+          </defs>
+          <rect width="400" height="500" fill="url(#glow-outer)"/>
+          <!-- Stylized human figure -->
+          <circle cx="200" cy="120" r="35" fill="url(#glow-inner)" opacity="0.8"/>
+          <circle cx="200" cy="120" r="25" fill="none" stroke="url(#body-grad)" stroke-width="1.5"/>
+          <line x1="200" y1="155" x2="200" y2="300" stroke="url(#body-grad)" stroke-width="2" opacity="0.7"/>
+          <line x1="200" y1="190" x2="150" y2="250" stroke="url(#body-grad)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="200" y1="190" x2="250" y2="250" stroke="url(#body-grad)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="200" y1="300" x2="160" y2="380" stroke="url(#body-grad)" stroke-width="1.5" opacity="0.6"/>
+          <line x1="200" y1="300" x2="240" y2="380" stroke="url(#body-grad)" stroke-width="1.5" opacity="0.6"/>
+          <!-- Energy rings -->
+          <circle cx="200" cy="220" r="60" fill="none" stroke="#F908ED" stroke-width="0.5" opacity="0.3"/>
+          <circle cx="200" cy="220" r="90" fill="none" stroke="#FFBD07" stroke-width="0.5" opacity="0.2"/>
+          <circle cx="200" cy="220" r="120" fill="none" stroke="#F908ED" stroke-width="0.3" opacity="0.15"/>
+          <!-- Data points -->
+          <circle cx="140" cy="200" r="3" fill="#F908ED" opacity="0.6"/>
+          <circle cx="260" cy="200" r="3" fill="#FFBD07" opacity="0.6"/>
+          <circle cx="200" cy="340" r="3" fill="#F908ED" opacity="0.6"/>
+          <circle cx="150" cy="280" r="3" fill="#FFBD07" opacity="0.4"/>
+          <circle cx="250" cy="280" r="3" fill="#F908ED" opacity="0.4"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 4 — SERVICES
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="services-header">
+      <div class="section-label reveal"><span>[</span> 02 — Services <span>]</span></div>
+      <h2 class="reveal">A Human-Centered Studio Practice</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <rect x="4" y="4" width="24" height="24" rx="3"/>
+            <line x1="4" y1="12" x2="28" y2="12"/>
+            <line x1="12" y1="12" x2="12" y2="28"/>
+          </svg>
+        </div>
+        <h3>Brand Architecture Consulting</h3>
+        <p>Crafting structures that drive business outcomes and inspire growth, aligning brand portfolios with business strategy.</p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M16 4L28 10v12L16 28 4 22V10L16 4z"/>
+            <line x1="16" y1="16" x2="28" y2="10"/>
+            <line x1="16" y1="16" x2="4" y2="10"/>
+            <line x1="16" y1="16" x2="16" y2="28"/>
+          </svg>
+        </div>
+        <h3>Experience Architecture & Design</h3>
+        <p>Designing emotional connections through physical and digital touchpoints that create immersive experiences.</p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="16" cy="12" r="4"/>
+            <path d="M8 26c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+            <circle cx="8" cy="10" r="3"/>
+            <circle cx="24" cy="10" r="3"/>
+          </svg>
+        </div>
+        <h3>Human-Centric Space Design</h3>
+        <p>Creating spaces that unite people, foster collaboration, and elevate the human spirit.</p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M4 16c0-6.6 5.4-12 12-12s12 5.4 12 12"/>
+            <path d="M8 16c0-4.4 3.6-8 8-8s8 3.6 8 8"/>
+            <circle cx="16" cy="16" r="4"/>
+            <line x1="16" y1="20" x2="16" y2="28"/>
+          </svg>
+        </div>
+        <h3>Immersive Brand Experience Design</h3>
+        <p>Transforming spaces into immersive brand stories that communicate values, culture, and uniqueness.</p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <polyline points="4,24 10,16 16,20 22,8 28,12"/>
+            <circle cx="4" cy="24" r="2"/>
+            <circle cx="28" cy="12" r="2"/>
+          </svg>
+        </div>
+        <h3>Customer Experience Journey Mapping</h3>
+        <p>Organizing brand portfolios to maximize growth, clarity, and meaningful connections with customers.</p>
+      </div>
+
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">
+          <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="16" cy="16" r="12"/>
+            <path d="M16 4c-3 4-5 8-5 12s2 8 5 12"/>
+            <path d="M16 4c3 4 5 8 5 12s-2 8-5 12"/>
+            <line x1="4" y1="16" x2="28" y2="16"/>
+          </svg>
+        </div>
+        <h3>Multisensory Brand Design</h3>
+        <p>Simplifying complexity to create meaningful brand experiences that engage and inspire audiences.</p>
+      </div>
+
+      <!-- CTA Card -->
+      <div class="service-cta-card reveal">
+        <h3>Not sure which service fits your goals?</h3>
+        <a href="#contact" class="btn btn-primary">Start with a Discovery Call &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 5 — PAST WORK
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="work" id="work">
+  <div class="container" style="padding-bottom: 48px;">
+    <div class="work-header">
+      <div class="section-label reveal"><span>[</span> 03 — Past Work <span>]</span></div>
+      <h2 class="reveal">Selected Client Work</h2>
+    </div>
+  </div>
+
+    <!-- Qualcomm -->
+    <div class="case-study reveal" style="background-image: url('assets/images/influencing_the_conversation.jpg');">
+      <div class="container">
+        <div class="case-content">
+          <div class="case-client">Qualcomm</div>
+          <h3>Influencing the Conversation</h3>
+          <p>We joined forces with Qualcomm to design and build a customized micro-influencer management platform for their Snapdragon-based product line. The platform helped Qualcomm identify, activate, and measure authentic creator voices — amplifying their brand message and reaching new developer and consumer audiences at scale.</p>
+          <div class="case-tags">
+            <span class="case-tag">Platform Development</span>
+            <span class="case-tag">Influencer Marketing</span>
+            <span class="case-tag">Brand Experience</span>
+          </div>
+          <a href="#" class="case-link">View Case Study &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Texas Instruments -->
+    <div class="case-study reveal" style="background-image: url('assets/images/hack_for_good.jpg');">
+      <div class="container">
+        <div class="case-content">
+          <div class="case-client">Texas Instruments</div>
+          <h3>Hack for Good</h3>
+          <p>Our team partnered with Texas Instruments to architect a software bounty program that transformed the security community into product advocates. By designing the program structure, communication framework, and incentive model, we helped TI build a sustainable ecosystem of researchers that measurably improved product resilience.</p>
+          <div class="case-tags">
+            <span class="case-tag">Developer Relations</span>
+            <span class="case-tag">Community Building</span>
+            <span class="case-tag">Security Programs</span>
+          </div>
+          <a href="#" class="case-link">View Case Study &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kayo Energy -->
+    <div class="case-study reveal" style="background-image: url('assets/images/harnessing_the_sun.jpg');">
+      <div class="container">
+        <div class="case-content">
+          <div class="case-client">Kayo Energy</div>
+          <h3>Harnessing the Sun</h3>
+          <p>We worked with Kayo Energy to create a video explainer that simplified a technically complex solar screen innovation for commercial building owners. The content translated energy efficiency data into a compelling visual narrative that directly supported their sales and customer education goals.</p>
+          <div class="case-tags">
+            <span class="case-tag">Brand Storytelling</span>
+            <span class="case-tag">Video Production</span>
+            <span class="case-tag">B2B Marketing</span>
+          </div>
+          <a href="#" class="case-link">View Case Study &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toyota -->
+    <div class="case-study reveal" style="background-image: url('assets/images/data_driven_stories.jpg');">
+      <div class="container">
+        <div class="case-content">
+          <div class="case-client">Toyota USA</div>
+          <h3>Data Driven Stories</h3>
+          <p>We partnered with Toyota USA to design and develop an immersive data visualization experience that transformed complex data insights into a compelling stakeholder narrative. The interactive experience enabled Toyota's team to communicate performance data with clarity and impact across executive and partner audiences.</p>
+          <div class="case-tags">
+            <span class="case-tag">Data Visualization</span>
+            <span class="case-tag">Experience Design</span>
+            <span class="case-tag">Stakeholder Communications</span>
+          </div>
+          <a href="#" class="case-link">View Case Study &rarr;</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Octavio -->
+    <div class="case-study reveal" style="background-image: url('assets/images/aurel_odessey.jpg');">
+      <div class="container">
+        <div class="case-content">
+          <div class="case-client">Octavio</div>
+          <h3>Aural Odyssey</h3>
+          <p>We partnered with Octavio to develop a sound station exhibit that showcased their groundbreaking 4D audio headphones. The experiential installation was designed to immerse visitors in the full sensory capability of the technology — revolutionizing how gaming and film audiences discovered the Octavio experience.</p>
+          <div class="case-tags">
+            <span class="case-tag">Experiential Design</span>
+            <span class="case-tag">Product Launch</span>
+            <span class="case-tag">Consumer Technology</span>
+          </div>
+          <a href="#" class="case-link">View Case Study &rarr;</a>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 6 — COMMUNITY
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="community" id="community">
+  <div class="container">
+    <div class="community-header">
+      <div class="section-label reveal"><span>[</span> 04 — Community Building <span>]</span></div>
+      <h2 class="reveal">Developer Relations &<br>Community-Led Growth</h2>
+      <p class="reveal">
+        Signet Science's origins are rooted in developer relations and product marketing. We've refined a program model that identifies technical experts who can authentically showcase solutions across their trusted channels — accelerating customer conversions through credible, third-party validation.
+      </p>
+    </div>
+
+    <div class="community-tiles">
+      <div class="community-tile reveal">
+        <div class="community-tile-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <span>Developer Advocate Programs</span>
+      </div>
+      <div class="community-tile reveal reveal-delay-1">
+        <div class="community-tile-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14"/>
+            <rect x="3" y="6" width="12" height="12" rx="2"/>
+          </svg>
+        </div>
+        <span>Technical Influencer Networks</span>
+      </div>
+      <div class="community-tile reveal reveal-delay-2">
+        <div class="community-tile-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <circle cx="12" cy="12" r="3"/>
+            <circle cx="4" cy="6" r="2"/>
+            <circle cx="20" cy="6" r="2"/>
+            <circle cx="4" cy="18" r="2"/>
+            <circle cx="20" cy="18" r="2"/>
+            <line x1="6" y1="7" x2="10" y2="10"/>
+            <line x1="18" y1="7" x2="14" y2="10"/>
+            <line x1="6" y1="17" x2="10" y2="14"/>
+            <line x1="18" y1="17" x2="14" y2="14"/>
+          </svg>
+        </div>
+        <span>Community Infrastructure Design</span>
+      </div>
+      <div class="community-tile reveal reveal-delay-3">
+        <div class="community-tile-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+            <rect x="3" y="11" width="18" height="11" rx="2"/>
+            <path d="M7 11V7a5 5 0 0110 0v4"/>
+          </svg>
+        </div>
+        <span>Security & Bounty Programs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 7A — CLIENTS WE'VE WORKED WITH
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="clients" id="clients">
+  <div class="container">
+    <div class="clients-header">
+      <div class="section-label reveal"><span>[</span> 05 — Clients <span>]</span></div>
+      <h2 class="reveal">Companies We've Worked With</h2>
+    </div>
+    <div class="logo-grid reveal">
+      <div class="logo-item"><img src="assets/images/logos/qualcomm-white.svg" alt="Qualcomm"></div>
+      <div class="logo-item"><img src="assets/images/logos/toyota-white.svg" alt="Toyota"></div>
+      <div class="logo-item"><img src="assets/images/logos/sony-white.svg" alt="Sony"></div>
+      <div class="logo-item"><img src="assets/images/logos/visa-white.svg" alt="Visa"></div>
+      <div class="logo-item"><img src="assets/images/logos/texasinstruments-white.svg" alt="Texas Instruments"></div>
+      <div class="logo-item"><img src="assets/images/logos/nestle-white.svg" alt="Nestl&eacute;"></div>
+      <div class="logo-item"><img src="assets/images/logos/bose-white.svg" alt="Bose"></div>
+      <div class="logo-item"><img src="assets/images/logos/novartis-white.svg" alt="Novartis"></div>
+      <div class="logo-item"><img src="assets/images/logos/enkei-white.svg" alt="Enkei"></div>
+      <div class="logo-item"><img src="assets/images/logos/speedline-white.svg" alt="Speedline"></div>
+      <div class="logo-item"><img src="assets/images/logos/google-white.svg" alt="Google"></div>
+      <div class="logo-item"><img src="assets/images/logos/unilever-white.svg" alt="Unilever"></div>
+    </div>
+    <p class="clients-sub reveal">
+      We partner selectively with innovators in health, infrastructure, finance, and commerce ready to lead the next wave of purposeful brand transformation.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 7B — MISSION
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="mission" id="mission">
+  <div class="container">
+    <div class="mission-inner">
+      <div class="section-label reveal"><span>[</span> Our Mission <span>]</span></div>
+      <h2 class="reveal">Make transformative change through purposeful innovation — while sustaining the value of people.</h2>
+      <p class="reveal">
+        Founded on the belief that human experience is the ultimate competitive
+        advantage, Signet Science operates at the intersection of brand strategy,
+        behavioral science, and platform technology. We're a distributed team with
+        decades of experience across Fortune 500 enterprises and high-growth
+        startups — bringing deep insights across markets, platforms, and
+        human contexts.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 8 — TEAM
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="team-header">
+      <div class="section-label reveal"><span>[</span> Our Team <span>]</span></div>
+      <h2 class="reveal">The People Behind the Practice</h2>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-avatar"><img src="assets/images/team/james-christopher.png" alt="James Christopher"></div>
+        <h3>James Christopher</h3>
+        <div class="team-title">Principal, Managing Director</div>
+        <p class="team-bio">Decades of experience leading brand strategy and experience design for Fortune 500 technology companies. Specializes in bridging human insight with platform innovation.</p>
+        <a href="#" class="team-social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-avatar"><img src="assets/images/team/matt-baha.png" alt="Matt Baha"></div>
+        <h3>Matt Baha</h3>
+        <div class="team-title">Senior Director, Partner — Labs</div>
+        <p class="team-bio">Expert in innovation lab operations and emerging technology integration. Leads Signet Science Labs, developing new frameworks for Human-in-the-Loop brand systems.</p>
+        <a href="#" class="team-social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-avatar"><img src="assets/images/team/chris-allen.png" alt="Chris Allen"></div>
+        <h3>Chris Allen</h3>
+        <div class="team-title">Director, Partner — UX</div>
+        <p class="team-bio">Deep expertise in user experience design and multisensory brand systems. Leads UX strategy and human-centric design across all client engagements.</p>
+        <a href="#" class="team-social" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="faq-header">
+      <div class="section-label reveal"><span>[</span> Frequently Asked Questions <span>]</span></div>
+      <h2 class="reveal">Common Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          What is Signet Science?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Signet Science is an experiential brand studio and platform innovation lab. The company specializes in Human-in-the-Loop brand systems — designing brand experiences that synthesize human intuition with machine intelligence for technology companies, enterprises, and high-growth startups.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          What is Human-in-the-Loop brand design?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Human-in-the-Loop (HITL) brand design is Signet Science's proprietary methodology for building brand systems that keep human judgment, intuition, and sensory experience at the center of every touchpoint — even when AI and automation power the underlying infrastructure. It maps cognitive and sensory needs to technological capabilities to create brand ecosystems that drive genuine advocacy.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          What types of companies does Signet Science work with?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Signet Science partners selectively with technology companies, enterprises, and high-growth startups in sectors including health, infrastructure, finance, and commerce. Past clients include Qualcomm, Toyota USA, Texas Instruments, and Kayo Energy.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          What services does Signet Science offer?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Signet Science offers brand architecture consulting, experience architecture and design, immersive brand experience design, customer experience journey mapping, multisensory brand design, and developer relations and community-building programs.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          What makes Signet Science different from a traditional brand agency?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Unlike traditional brand agencies focused on visual identity and campaigns, Signet Science architects entire Human-in-the-Loop brand ecosystems. The studio combines brand strategy with behavioral science, platform technology, and developer community expertise — delivering immersive experiences that turn users into advocates and technology into lived brand reality.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          How does Signet Science approach developer relations?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Signet Science builds developer relations programs rooted in authenticity and community trust. We identify technical experts who can credibly showcase solutions across their channels, design program infrastructure (bounties, advocacy tiers, content frameworks), and measure outcomes that tie community engagement to business growth.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          What industries does Signet Science serve?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Signet Science works across technology sectors including semiconductors, automotive, energy, consumer electronics, and enterprise software. We focus on companies where human experience and technical innovation intersect — particularly those with complex products that benefit from experiential brand strategies.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          How long does a typical Signet Science engagement take?
+          <div class="faq-icon"></div>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Engagement length varies based on scope. Discovery and strategy phases typically run 4–6 weeks. Full brand ecosystem builds, including experience design and community infrastructure, range from 3–6 months. We work in agile sprints with clear milestones and stakeholder checkpoints throughout.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     SECTION 9 — CONTACT
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-header">
+      <div class="section-label reveal"><span>[</span> 06 — Start a Project <span>]</span></div>
+      <h2 class="reveal">Let's Build Something Together</h2>
+      <p class="reveal">Tell us about your goals. We'll respond within 1 business day.</p>
+    </div>
+
+    <div class="contact-grid">
+      <form id="contact-form" class="reveal">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" class="form-input" placeholder="Jane">
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" class="form-input" placeholder="Doe">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Work Email *</label>
+          <input type="email" id="email" class="form-input" placeholder="jane@company.com" required>
+        </div>
+        <div class="form-group">
+          <label for="company">Company Name *</label>
+          <input type="text" id="company" class="form-input" placeholder="Acme Corp" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Service Interest</label>
+          <select id="service" class="form-input">
+            <option value="">Select a service...</option>
+            <option>Brand Architecture Consulting</option>
+            <option>Experience Architecture & Design</option>
+            <option>Human-Centric Space Design</option>
+            <option>Immersive Brand Experience Design</option>
+            <option>Customer Experience Journey Mapping</option>
+            <option>Multisensory Brand Design</option>
+            <option>Developer Relations Programs</option>
+            <option>Not Sure — Let's Talk</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="description">Project Description</label>
+          <textarea id="description" class="form-input" rows="5" placeholder="Tell us about your brand challenge, product, or the experience you're trying to create..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="referral">How did you hear about us?</label>
+          <select id="referral" class="form-input">
+            <option value="">Select...</option>
+            <option>Google Search</option>
+            <option>LinkedIn</option>
+            <option>Referral</option>
+            <option>Conference/Event</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-submit">Send Message &rarr;</button>
+      </form>
+
+      <div class="contact-info reveal reveal-delay-2">
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Direct</div>
+            <div class="contact-info-value"><a href="mailto:hello@signetscience.com">hello@signetscience.com</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">LinkedIn</div>
+            <div class="contact-info-value"><a href="#">Signet Science</a></div>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Location</div>
+            <div class="contact-info-value">Based in Los Angeles / San Diego, working globally</div>
+          </div>
+        </div>
+
+        <div class="contact-status">
+          <div class="contact-status-item">
+            <div class="contact-status-dot"></div>
+            Typically responds within 24 hours
+          </div>
+          <div class="contact-status-item">
+            <div class="contact-status-dot"></div>
+            Currently accepting new projects
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="assets/images/signet-logo.svg" alt="Signet Science logo" class="footer-logo-icon">
+          <span class="footer-logo-name">Signet Science</span>
+        </div>
+        <p class="footer-desc">An experiential brand studio architecting Human-in-the-Loop brand systems for technology companies.</p>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Services</div>
+        <div class="footer-links">
+          <a href="#services">Brand Architecture</a>
+          <a href="#services">Experience Architecture</a>
+          <a href="#services">Human-Centric Design</a>
+          <a href="#services">Immersive Brand Design</a>
+          <a href="#services">CX Journey Mapping</a>
+          <a href="#services">Multisensory Design</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Navigate</div>
+        <div class="footer-links">
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#team">Team</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer-col-title">Connect</div>
+        <div class="footer-links">
+          <a href="#">LinkedIn</a>
+          <a href="#">X / Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+        <div class="footer-col-title" style="margin-top: 24px;">Newsletter</div>
+        <div class="footer-subscribe">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+          <button type="button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2025 Signet Science</span>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
