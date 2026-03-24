@@ -760,18 +760,18 @@ button, input, select, textarea {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(5, 8, 20, 0.72) 0%,
-    rgba(5, 8, 20, 0.58) 50%,
-    rgba(5, 8, 20, 0.35) 100%
+    rgba(5, 8, 20, 0.67) 0%,
+    rgba(5, 8, 20, 0.53) 50%,
+    rgba(5, 8, 20, 0.30) 100%
   );
   z-index: 1;
 }
 .case-study:nth-child(even)::before {
   background: linear-gradient(
     to left,
-    rgba(5, 8, 20, 0.72) 0%,
-    rgba(5, 8, 20, 0.58) 50%,
-    rgba(5, 8, 20, 0.35) 100%
+    rgba(5, 8, 20, 0.67) 0%,
+    rgba(5, 8, 20, 0.53) 50%,
+    rgba(5, 8, 20, 0.30) 100%
   );
 }
 .case-study .container {
@@ -840,8 +840,20 @@ button, input, select, textarea {
    SECTION: COMMUNITY
    ═══════════════════════════════════════════════════════════════ */
 .community {
-  background: var(--color-bg-secondary);
+  background: url('assets/images/community-building.jpeg') center/cover no-repeat;
   padding: var(--section-pad) 0;
+  position: relative;
+}
+.community::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 8, 20, 0.78);
+  z-index: 0;
+}
+.community > .container {
+  position: relative;
+  z-index: 1;
 }
 .community-header {
   max-width: 700px;
@@ -957,6 +969,20 @@ button, input, select, textarea {
   padding: var(--section-pad) 0;
   position: relative;
   overflow: hidden;
+}
+.mission::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, rgba(249, 8, 237, 0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 30% 70%, rgba(255, 189, 7, 0.06) 0%, transparent 50%);
+  animation: missionPulse 6s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+@keyframes missionPulse {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
 }
 .mission::before {
   content: '';
@@ -1427,7 +1453,7 @@ select.form-input {
   .case-study { min-height: 400px; padding: 60px 0; }
   .case-study::before,
   .case-study:nth-child(even)::before {
-    background: rgba(5, 8, 20, 0.65);
+    background: rgba(5, 8, 20, 0.60);
   }
   .case-study:nth-child(even) .case-content { margin-left: 0; }
   .logo-grid { grid-template-columns: repeat(4, 1fr); }
